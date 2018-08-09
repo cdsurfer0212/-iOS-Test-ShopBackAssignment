@@ -1,0 +1,6 @@
+framework module Pods_ShopBackAssignment {
+  umbrella header "Pods-ShopBackAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}

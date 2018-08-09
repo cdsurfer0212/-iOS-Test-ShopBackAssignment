@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.3)
+  - AppDevKit (1.4.0):
+    - AppDevKit/AppDevAnimateKit (= 1.4.0)
+    - AppDevKit/AppDevCameraKit (= 1.4.0)
+    - AppDevKit/AppDevCommonKit (= 1.4.0)
+    - AppDevKit/AppDevImageKit (= 1.4.0)
+    - AppDevKit/AppDevListViewKit (= 1.4.0)
+    - AppDevKit/AppDevUIKit (= 1.4.0)
+  - AppDevKit/AppDevAnimateKit (1.4.0)
+  - AppDevKit/AppDevCameraKit (1.4.0)
+  - AppDevKit/AppDevCommonKit (1.4.0)
+  - AppDevKit/AppDevImageKit (1.4.0):
+    - AppDevKit/AppDevCommonKit
+  - AppDevKit/AppDevListViewKit (1.4.0):
+    - AppDevKit/AppDevCommonKit
+    - AppDevKit/AppDevUIKit
+  - AppDevKit/AppDevUIKit (1.4.0):
+    - AppDevKit/AppDevCommonKit
+  - ObjectMapper (3.3.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (~> 5.1)
+  - AppDevKit (~> 1.3)
+  - SDWebImage (~> 4.4)
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
+  AppDevKit: c6b1f36277c6e3b8eb231d46dd13298aab0590ab
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: fc42630394ec021137087a368c2478febb36670c
+
+COCOAPODS: 1.4.0
