@@ -13,6 +13,13 @@
 		B227BBF5211BE5B300D8785A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B227BBF3211BE5B300D8785A /* Main.storyboard */; };
 		B227BBF7211BE5B500D8785A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B227BBF6211BE5B500D8785A /* Assets.xcassets */; };
 		B227BBFA211BE5B500D8785A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B227BBF8211BE5B500D8785A /* LaunchScreen.storyboard */; };
+		B227BC0A211C471400D8785A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC09211C471400D8785A /* Movie.swift */; };
+		B227BC0C211C5F1700D8785A /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC0B211C5F1700D8785A /* Genre.swift */; };
+		B227BC0E211C5F2B00D8785A /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC0D211C5F2B00D8785A /* Language.swift */; };
+		B227BC15211C9FDE00D8785A /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC14211C9FDE00D8785A /* Movies.swift */; };
+		B227BC18211D371700D8785A /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = B227BC17211D371700D8785A /* Secrets.plist */; };
+		B227BC1A211D377B00D8785A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC19211D377B00D8785A /* Util.swift */; };
+		B227BC1C211DFED400D8785A /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC1B211DFED400D8785A /* MovieService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		B227BBF6211BE5B500D8785A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B227BBF9211BE5B500D8785A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B227BBFB211BE5B500D8785A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B227BC09211C471400D8785A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B227BC0B211C5F1700D8785A /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		B227BC0D211C5F2B00D8785A /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		B227BC14211C9FDE00D8785A /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		B227BC17211D371700D8785A /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		B227BC19211D377B00D8785A /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B227BC1B211DFED400D8785A /* MovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieService.swift; path = ShopBackAssignment/DataServices/MovieService.swift; sourceTree = SOURCE_ROOT; };
 		D82BF1B88950F213B8A18D84 /* Pods-ShopBackAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopBackAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopBackAssignment/Pods-ShopBackAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		E97D155B320BAD63A772094F /* Pods_ShopBackAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopBackAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,14 +84,38 @@
 		B227BBEE211BE5B300D8785A /* ShopBackAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				B227BC08211C46F600D8785A /* DataModels */,
+				B227BC05211C415100D8785A /* DataServices */,
 				B227BBEF211BE5B300D8785A /* AppDelegate.swift */,
+				B227BC19211D377B00D8785A /* Util.swift */,
 				B227BBF1211BE5B300D8785A /* ViewController.swift */,
 				B227BBF3211BE5B300D8785A /* Main.storyboard */,
 				B227BBF6211BE5B500D8785A /* Assets.xcassets */,
 				B227BBF8211BE5B500D8785A /* LaunchScreen.storyboard */,
 				B227BBFB211BE5B500D8785A /* Info.plist */,
+				B227BC17211D371700D8785A /* Secrets.plist */,
 			);
 			path = ShopBackAssignment;
+			sourceTree = "<group>";
+		};
+		B227BC05211C415100D8785A /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				B227BC1B211DFED400D8785A /* MovieService.swift */,
+			);
+			name = DataServices;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		B227BC08211C46F600D8785A /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				B227BC0B211C5F1700D8785A /* Genre.swift */,
+				B227BC0D211C5F2B00D8785A /* Language.swift */,
+				B227BC09211C471400D8785A /* Movie.swift */,
+				B227BC14211C9FDE00D8785A /* Movies.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 		E44594FD2AD1D788C8FD71B8 /* Frameworks */ = {
@@ -149,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B227BC18211D371700D8785A /* Secrets.plist in Resources */,
 				B227BBFA211BE5B500D8785A /* LaunchScreen.storyboard in Resources */,
 				B227BBF7211BE5B500D8785A /* Assets.xcassets in Resources */,
 				B227BBF5211BE5B300D8785A /* Main.storyboard in Resources */,
@@ -224,8 +263,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B227BC15211C9FDE00D8785A /* Movies.swift in Sources */,
 				B227BBF2211BE5B300D8785A /* ViewController.swift in Sources */,
+				B227BC1A211D377B00D8785A /* Util.swift in Sources */,
+				B227BC0A211C471400D8785A /* Movie.swift in Sources */,
+				B227BC0E211C5F2B00D8785A /* Language.swift in Sources */,
+				B227BC1C211DFED400D8785A /* MovieService.swift in Sources */,
 				B227BBF0211BE5B300D8785A /* AppDelegate.swift in Sources */,
+				B227BC0C211C5F1700D8785A /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +418,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignment/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -389,7 +437,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignment/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
