@@ -6,6 +6,7 @@
 //  Copyright © 2018 Sean Zeng. All rights reserved.
 //
 
+import AppDevKit
 import UIKit
 
 class MovieListViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -14,6 +15,8 @@ class MovieListViewController: UIViewController, UICollectionViewDataSource, UIC
     
     // FIXME: move to data store
     private var data: [Movie] = [Movie]()
+    private var page = 1
+    private var total = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,26 +28,39 @@ class MovieListViewController: UIViewController, UICollectionViewDataSource, UIC
     override func didMove(toParentViewController parent: UIViewController?) {
         super.didMove(toParentViewController: parent)
         
+        setupInfiniteScrollingView()
+        setupPullToRefreshView()
         fetchData(page: 1)
+    }
+    
+    deinit {
+        //collectionView.showInfiniteScrolling = false
     }
 
     // MARK: Private methods
     
-    func fetchData(page: Int) {
+    private func fetchData(page: Int) {
         // FIXME: move to data store
         MovieService.getMovies(sort: "release_date.desc", page: page) { [weak self] (movies) in
-            if let results = movies?.results, let totalPages = movies?.totalPages, let strongSelf = self {
+            if let results = movies?.results, let page = movies?.page, let total = movies?.totalPages, let strongSelf = self {
                 if page == 1 && results.count > 0 {
                     strongSelf.data.removeAll()
                 }
                 strongSelf.data.append(contentsOf: results)
+                strongSelf.page = page
+                strongSelf.total = total
+                strongSelf.collectionView.showInfiniteScrolling = total > page;
+                strongSelf.collectionView.showPullToRefresh = true
                 strongSelf.collectionView.reloadData()
+                strongSelf.collectionView.infiniteScrollingContentView.stopAnimating()
+                strongSelf.collectionView.pullToRefreshContentView.stopAnimating()
             }
         }
     }
     
-    func setupCollectionView() {
+    private func setupCollectionView() {
         collectionView = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
+        collectionView.alwaysBounceVertical = true
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
         collectionView.decelerationRate = UIScrollViewDecelerationRateFast
@@ -59,8 +75,33 @@ class MovieListViewController: UIViewController, UICollectionViewDataSource, UIC
         setupCollectionViewCell()
     }
     
-    func setupCollectionViewCell() {
+    private func setupCollectionViewCell() {
         collectionView.register(UINib(nibName: movieListCollectionViewCellIdentifier, bundle: nil), forCellWithReuseIdentifier: movieListCollectionViewCellIdentifier)
+    }
+    
+    private func setupInfiniteScrollingView() {
+        let activityIndicatorView = InfiniteScrollingView.init(frame: CGRect(x: 0.0, y: 0.0, width: collectionView.frame.width, height: 50.0))
+        activityIndicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        activityIndicatorView.hidesWhenStopped = false
+        activityIndicatorView.startAnimating()
+        collectionView.adkAddInfiniteScrolling(withHandle: activityIndicatorView) { [weak self] in
+            if let strongSelf = self {
+                if (strongSelf.collectionView.infiniteScrollingContentView.state != ADKInfiniteScrollingState.stopped) {
+                    strongSelf.collectionView.showPullToRefresh = false
+                }
+                
+                strongSelf.fetchData(page: strongSelf.page + 1)
+            }
+        }
+    }
+    
+    private func setupPullToRefreshView() {
+        let pullToRefreshView = PullToRefreshView.init(frame: CGRect(x: 0.0, y: 0.0, width: collectionView.frame.width, height: 50.0))
+        collectionView.adkAddPullToRefresh(withHandle: pullToRefreshView) { [weak self] in
+            if let strongSelf = self {
+                strongSelf.fetchData(page: 1)
+            }
+        }
     }
     
     // MARK: UICollectionViewDataSource
