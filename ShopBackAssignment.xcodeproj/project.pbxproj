@@ -14,6 +14,7 @@
 		B21012B12121E402001FBD26 /* PullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012B02121E402001FBD26 /* PullToRefreshView.swift */; };
 		B21012B42121FE0F001FBD26 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012B22121FE0F001FBD26 /* MovieDetailViewController.swift */; };
 		B21012B52121FE0F001FBD26 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21012B32121FE0F001FBD26 /* MovieDetailViewController.xib */; };
+		B21012C721233A81001FBD26 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012C621233A81001FBD26 /* WKWebViewController.swift */; };
 		B227BBF0211BE5B300D8785A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BBEF211BE5B300D8785A /* AppDelegate.swift */; };
 		B227BBF5211BE5B300D8785A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B227BBF3211BE5B300D8785A /* Main.storyboard */; };
 		B227BBF7211BE5B500D8785A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B227BBF6211BE5B500D8785A /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		B21012B02121E402001FBD26 /* PullToRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshView.swift; sourceTree = "<group>"; };
 		B21012B22121FE0F001FBD26 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		B21012B32121FE0F001FBD26 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
+		B21012C621233A81001FBD26 /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		B227BBEC211BE5B300D8785A /* ShopBackAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopBackAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B227BBEF211BE5B300D8785A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B227BBF4211BE5B300D8785A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				B21012AE2121D0FD001FBD26 /* InfiniteScrollingView.swift */,
 				B21012B02121E402001FBD26 /* PullToRefreshView.swift */,
 				B227BC19211D377B00D8785A /* Util.swift */,
+				B21012C621233A81001FBD26 /* WKWebViewController.swift */,
 				B227BBF3211BE5B300D8785A /* Main.storyboard */,
 				B227BBF6211BE5B500D8785A /* Assets.xcassets */,
 				B227BBF8211BE5B500D8785A /* LaunchScreen.storyboard */,
@@ -311,6 +314,7 @@
 				B21012B12121E402001FBD26 /* PullToRefreshView.swift in Sources */,
 				B21012A721212B72001FBD26 /* MovieListCollectionViewCell.swift in Sources */,
 				B227BC1C211DFED400D8785A /* MovieService.swift in Sources */,
+				B21012C721233A81001FBD26 /* WKWebViewController.swift in Sources */,
 				B227BC1F2120987600D8785A /* MovieListViewController.swift in Sources */,
 				B227BBF0211BE5B300D8785A /* AppDelegate.swift in Sources */,
 				B227BC0C211C5F1700D8785A /* Genre.swift in Sources */,

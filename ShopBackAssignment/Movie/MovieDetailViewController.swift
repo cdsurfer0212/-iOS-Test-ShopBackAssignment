@@ -96,7 +96,9 @@ class MovieDetailViewController: UIViewController {
     // MARK: UI events
 
     @IBAction func tapBookingButton(_ sender: Any) {
-        
+        let wkWebViewController = WKWebViewController.init()
+        wkWebViewController.urlString = "https://www.cathaycineplexes.com.sg/"
+        navigationController?.pushViewController(wkWebViewController, animated: true)
     }
     
 }
