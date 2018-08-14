@@ -15,6 +15,7 @@
 		B21012B42121FE0F001FBD26 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012B22121FE0F001FBD26 /* MovieDetailViewController.swift */; };
 		B21012B52121FE0F001FBD26 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21012B32121FE0F001FBD26 /* MovieDetailViewController.xib */; };
 		B21012C721233A81001FBD26 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012C621233A81001FBD26 /* WKWebViewController.swift */; };
+		B21012CF21234FE4001FBD26 /* ShopBackAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012CE21234FE4001FBD26 /* ShopBackAssignmentTests.swift */; };
 		B227BBF0211BE5B300D8785A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BBEF211BE5B300D8785A /* AppDelegate.swift */; };
 		B227BBF5211BE5B300D8785A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B227BBF3211BE5B300D8785A /* Main.storyboard */; };
 		B227BBF7211BE5B500D8785A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B227BBF6211BE5B500D8785A /* Assets.xcassets */; };
@@ -29,6 +30,16 @@
 		B227BC1F2120987600D8785A /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC1E2120987600D8785A /* MovieListViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B21012D121234FE4001FBD26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B227BBE4211BE5B300D8785A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B227BBEB211BE5B300D8785A;
+			remoteInfo = ShopBackAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		12B3B358C2AAC6A82AA45216 /* Pods-ShopBackAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopBackAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopBackAssignment/Pods-ShopBackAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		B21012A521212B72001FBD26 /* MovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -39,6 +50,9 @@
 		B21012B22121FE0F001FBD26 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		B21012B32121FE0F001FBD26 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		B21012C621233A81001FBD26 /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		B21012CC21234FE4001FBD26 /* ShopBackAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopBackAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21012CE21234FE4001FBD26 /* ShopBackAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopBackAssignmentTests.swift; sourceTree = "<group>"; };
+		B21012D021234FE4001FBD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B227BBEC211BE5B300D8785A /* ShopBackAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopBackAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B227BBEF211BE5B300D8785A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B227BBF4211BE5B300D8785A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B21012C921234FE4001FBD26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B227BBE9211BE5B300D8785A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,10 +108,20 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		B21012CD21234FE4001FBD26 /* ShopBackAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				B21012CE21234FE4001FBD26 /* ShopBackAssignmentTests.swift */,
+				B21012D021234FE4001FBD26 /* Info.plist */,
+			);
+			path = ShopBackAssignmentTests;
+			sourceTree = "<group>";
+		};
 		B227BBE3211BE5B300D8785A = {
 			isa = PBXGroup;
 			children = (
 				B227BBEE211BE5B300D8785A /* ShopBackAssignment */,
+				B21012CD21234FE4001FBD26 /* ShopBackAssignmentTests */,
 				B227BBED211BE5B300D8785A /* Products */,
 				811D466BBC19B05B35E795D6 /* Pods */,
 				E44594FD2AD1D788C8FD71B8 /* Frameworks */,
@@ -101,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				B227BBEC211BE5B300D8785A /* ShopBackAssignment.app */,
+				B21012CC21234FE4001FBD26 /* ShopBackAssignmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +200,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B21012CB21234FE4001FBD26 /* ShopBackAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21012D321234FE4001FBD26 /* Build configuration list for PBXNativeTarget "ShopBackAssignmentTests" */;
+			buildPhases = (
+				B21012C821234FE4001FBD26 /* Sources */,
+				B21012C921234FE4001FBD26 /* Frameworks */,
+				B21012CA21234FE4001FBD26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B21012D221234FE4001FBD26 /* PBXTargetDependency */,
+			);
+			name = ShopBackAssignmentTests;
+			productName = ShopBackAssignmentTests;
+			productReference = B21012CC21234FE4001FBD26 /* ShopBackAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B227BBEB211BE5B300D8785A /* ShopBackAssignment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B227BBFE211BE5B500D8785A /* Build configuration list for PBXNativeTarget "ShopBackAssignment" */;
@@ -198,6 +248,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Sean Zeng";
 				TargetAttributes = {
+					B21012CB21234FE4001FBD26 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B227BBEB211BE5B300D8785A;
+					};
 					B227BBEB211BE5B300D8785A = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
@@ -218,11 +272,19 @@
 			projectRoot = "";
 			targets = (
 				B227BBEB211BE5B300D8785A /* ShopBackAssignment */,
+				B21012CB21234FE4001FBD26 /* ShopBackAssignmentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B21012CA21234FE4001FBD26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B227BBEA211BE5B300D8785A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,6 +363,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B21012C821234FE4001FBD26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21012CF21234FE4001FBD26 /* ShopBackAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B227BBE8211BE5B300D8785A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +393,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B21012D221234FE4001FBD26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B227BBEB211BE5B300D8785A /* ShopBackAssignment */;
+			targetProxy = B21012D121234FE4001FBD26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		B227BBF3211BE5B300D8785A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -343,6 +421,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B21012D421234FE4001FBD26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X28C7C3VS;
+				INFOPLIST_FILE = ShopBackAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShopBackAssignment.app/ShopBackAssignment";
+			};
+			name = Debug;
+		};
+		B21012D521234FE4001FBD26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X28C7C3VS;
+				INFOPLIST_FILE = ShopBackAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShopBackAssignment.app/ShopBackAssignment";
+			};
+			name = Release;
+		};
 		B227BBFC211BE5B500D8785A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,6 +621,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B21012D321234FE4001FBD26 /* Build configuration list for PBXNativeTarget "ShopBackAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21012D421234FE4001FBD26 /* Debug */,
+				B21012D521234FE4001FBD26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B227BBE7211BE5B300D8785A /* Build configuration list for PBXProject "ShopBackAssignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
