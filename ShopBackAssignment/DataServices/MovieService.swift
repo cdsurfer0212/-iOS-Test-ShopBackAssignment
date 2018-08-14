@@ -31,13 +31,17 @@ class MovieService: NSObject {
         }
     }
     
+    // FIXME: use criteria instead of sort, page and primary_release_date.lte
     static func getMovies(sort: String, page: Int, completion: @escaping (Movies?) -> ()) {
         guard let secret = secret else {
             // FIXME: error handling
             return
         }
         
-        Alamofire.request("https://api.themoviedb.org/3/discover/movie", parameters: ["api_key": secret, "sort_by": sort, "page": page]).responseObject { (response: DataResponse<Movies>) in
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        let dateString = dateFormatter.string(from: Date())
+        Alamofire.request("https://api.themoviedb.org/3/discover/movie", parameters: ["api_key": secret, "page": page, "primary_release_date.lte": dateString, "sort_by": sort]).responseObject { (response: DataResponse<Movies>) in
             completion(response.result.value)
         }
     }

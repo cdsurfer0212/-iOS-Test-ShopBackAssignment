@@ -29,7 +29,7 @@ class MovieListCollectionViewCell: UICollectionViewCell {
     var posterPath: String? {
         didSet {
             if let posterPath = posterPath, posterPath.count > 0 {
-                posterImageView.sd_setImage(with: URL(string: "https://image.tmdb.org/t/p/w300_and_h450_bestv2/\(posterPath)"), placeholderImage: UIImage.init(named: "Icon-Placeholder"))
+                posterImageView.sd_setImage(with: URL(string: "https://image.tmdb.org/t/p/w300\(posterPath)"), placeholderImage: UIImage.init(named: "Icon-Placeholder"))
             } else {
                 posterImageView.image = UIImage.init(named: "Icon-Placeholder")
             }

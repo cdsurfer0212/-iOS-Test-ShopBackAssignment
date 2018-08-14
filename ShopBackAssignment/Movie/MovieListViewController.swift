@@ -22,6 +22,7 @@ class MovieListViewController: UIViewController, UICollectionViewDataSource, UIC
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "Movies"
         setupCollectionView()
     }
     
@@ -124,7 +125,10 @@ class MovieListViewController: UIViewController, UICollectionViewDataSource, UIC
     // MARK: UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // FIXME
+        let movie = data[indexPath.item]
+        let movieDetailViewController = MovieDetailViewController.init()
+        movieDetailViewController.movie = movie
+        navigationController?.pushViewController(movieDetailViewController, animated: true)
     }
     
     // MARK: UICollectionViewDelegateFlowLayout

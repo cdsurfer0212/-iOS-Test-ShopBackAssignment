@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let movieListViewController = MovieListViewController.init(nibName: nil, bundle: nil)
         let navigationController = UINavigationController.init(rootViewController: movieListViewController)
+        navigationController.navigationBar.barTintColor = UIColor.adkColor(withHexString: "00d573")
+        navigationController.navigationBar.tintColor = UIColor.black;
         window?.rootViewController = navigationController
         
         return true
