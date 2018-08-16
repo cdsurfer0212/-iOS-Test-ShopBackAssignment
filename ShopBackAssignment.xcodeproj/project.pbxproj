@@ -16,6 +16,9 @@
 		B21012B52121FE0F001FBD26 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21012B32121FE0F001FBD26 /* MovieDetailViewController.xib */; };
 		B21012C721233A81001FBD26 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012C621233A81001FBD26 /* WKWebViewController.swift */; };
 		B21012CF21234FE4001FBD26 /* ShopBackAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012CE21234FE4001FBD26 /* ShopBackAssignmentTests.swift */; };
+		B21012D721255922001FBD26 /* UtilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012D621255922001FBD26 /* UtilSpec.swift */; };
+		B21012DA212569E8001FBD26 /* Bundle+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21012D9212569E8001FBD26 /* Bundle+Test.swift */; };
+		B21012DC212579EE001FBD26 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = B21012DB212579EE001FBD26 /* Secrets.plist */; };
 		B227BBF0211BE5B300D8785A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BBEF211BE5B300D8785A /* AppDelegate.swift */; };
 		B227BBF5211BE5B300D8785A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B227BBF3211BE5B300D8785A /* Main.storyboard */; };
 		B227BBF7211BE5B500D8785A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B227BBF6211BE5B500D8785A /* Assets.xcassets */; };
@@ -56,6 +59,9 @@
 		B21012CC21234FE4001FBD26 /* ShopBackAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopBackAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21012CE21234FE4001FBD26 /* ShopBackAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopBackAssignmentTests.swift; sourceTree = "<group>"; };
 		B21012D021234FE4001FBD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B21012D621255922001FBD26 /* UtilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilSpec.swift; sourceTree = "<group>"; };
+		B21012D9212569E8001FBD26 /* Bundle+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Test.swift"; sourceTree = "<group>"; };
+		B21012DB212579EE001FBD26 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		B227BBEC211BE5B300D8785A /* ShopBackAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopBackAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B227BBEF211BE5B300D8785A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B227BBF4211BE5B300D8785A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,8 +124,11 @@
 		B21012CD21234FE4001FBD26 /* ShopBackAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				B21012D9212569E8001FBD26 /* Bundle+Test.swift */,
 				B21012CE21234FE4001FBD26 /* ShopBackAssignmentTests.swift */,
+				B21012D621255922001FBD26 /* UtilSpec.swift */,
 				B21012D021234FE4001FBD26 /* Info.plist */,
+				B21012DB212579EE001FBD26 /* Secrets.plist */,
 			);
 			path = ShopBackAssignmentTests;
 			sourceTree = "<group>";
@@ -293,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21012DC212579EE001FBD26 /* Secrets.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +441,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21012D721255922001FBD26 /* UtilSpec.swift in Sources */,
+				B21012DA212569E8001FBD26 /* Bundle+Test.swift in Sources */,
 				B21012CF21234FE4001FBD26 /* ShopBackAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,7 +505,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignmentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -510,7 +526,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignmentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -642,7 +662,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignment/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ShopBackAssignment/ShopBackAssignment-Bridging-Header.h";
@@ -661,7 +684,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignment/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ShopBackAssignment/ShopBackAssignment-Bridging-Header.h";

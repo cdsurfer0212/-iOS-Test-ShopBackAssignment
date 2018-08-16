@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
+            return true
+        }
+        
         let movieListViewController = MovieListViewController.init(nibName: nil, bundle: nil)
         let navigationController = UINavigationController.init(rootViewController: movieListViewController)
         navigationController.navigationBar.barTintColor = UIColor.adkColor(withHexString: "00d573")

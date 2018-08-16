@@ -59,7 +59,6 @@ class MovieDetailViewController: UIViewController {
         if let genreNames = genreNames, genreNames.count > 0 {
             genresLabel.text = "• " + genreNames.joined(separator: " | ")
             genresLabel.adkHide(false, withConstraints: ADKLayoutAttribute.top)
-
         } else {
             genresLabel.text = ""
             genresLabel.adkHide(true, withConstraints: ADKLayoutAttribute.top)
