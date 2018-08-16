@@ -11,4 +11,11 @@ target 'ShopBackAssignment' do
   pod 'AppDevKit', '~> 1.3'
   pod 'SDWebImage', '~> 4.4'
 
+  target 'ShopBackAssignmentTests' do
+    inherit! :search_paths
+
+    pod 'Quick'
+    pod 'Nimble'
+  end
+
 end

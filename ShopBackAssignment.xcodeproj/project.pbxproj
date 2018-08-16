@@ -28,6 +28,7 @@
 		B227BC1A211D377B00D8785A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC19211D377B00D8785A /* Util.swift */; };
 		B227BC1C211DFED400D8785A /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC1B211DFED400D8785A /* MovieService.swift */; };
 		B227BC1F2120987600D8785A /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227BC1E2120987600D8785A /* MovieListViewController.swift */; };
+		D7E1118AB0BAD362F8461A50 /* Pods_ShopBackAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BB4E0EAAEDC1DCEDD8AFA2 /* Pods_ShopBackAssignmentTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		12B3B358C2AAC6A82AA45216 /* Pods-ShopBackAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopBackAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopBackAssignment/Pods-ShopBackAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		3AD3B7BED78D3508EDEA04BD /* Pods-ShopBackAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopBackAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopBackAssignmentTests/Pods-ShopBackAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98BB4E0EAAEDC1DCEDD8AFA2 /* Pods_ShopBackAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopBackAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21012A521212B72001FBD26 /* MovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewCell.swift; sourceTree = "<group>"; };
 		B21012A621212B72001FBD26 /* MovieListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListCollectionViewCell.xib; sourceTree = "<group>"; };
 		B21012AA21214DCF001FBD26 /* ShopBackAssignment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShopBackAssignment-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		B227BC1B211DFED400D8785A /* MovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieService.swift; path = ShopBackAssignment/DataServices/MovieService.swift; sourceTree = SOURCE_ROOT; };
 		B227BC1E2120987600D8785A /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		D82BF1B88950F213B8A18D84 /* Pods-ShopBackAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopBackAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopBackAssignment/Pods-ShopBackAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		E83229D67B70886F24D1477E /* Pods-ShopBackAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopBackAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopBackAssignmentTests/Pods-ShopBackAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		E97D155B320BAD63A772094F /* Pods_ShopBackAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopBackAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E1118AB0BAD362F8461A50 /* Pods_ShopBackAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,8 @@
 			children = (
 				D82BF1B88950F213B8A18D84 /* Pods-ShopBackAssignment.debug.xcconfig */,
 				12B3B358C2AAC6A82AA45216 /* Pods-ShopBackAssignment.release.xcconfig */,
+				3AD3B7BED78D3508EDEA04BD /* Pods-ShopBackAssignmentTests.debug.xcconfig */,
+				E83229D67B70886F24D1477E /* Pods-ShopBackAssignmentTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				E97D155B320BAD63A772094F /* Pods_ShopBackAssignment.framework */,
+				98BB4E0EAAEDC1DCEDD8AFA2 /* Pods_ShopBackAssignmentTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B21012D321234FE4001FBD26 /* Build configuration list for PBXNativeTarget "ShopBackAssignmentTests" */;
 			buildPhases = (
+				25DF29F96AF567AA49AF2FBF /* [CP] Check Pods Manifest.lock */,
 				B21012C821234FE4001FBD26 /* Sources */,
 				B21012C921234FE4001FBD26 /* Frameworks */,
 				B21012CA21234FE4001FBD26 /* Resources */,
+				8F19330B5C20454193DF38E9 /* [CP] Embed Pods Frameworks */,
+				A4A3CB6D32AF92301253AD52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,6 +330,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		25DF29F96AF567AA49AF2FBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShopBackAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		66CEDD65B1456B28D95F4C9D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +372,41 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShopBackAssignment/Pods-ShopBackAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F19330B5C20454193DF38E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShopBackAssignmentTests/Pods-ShopBackAssignmentTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShopBackAssignmentTests/Pods-ShopBackAssignmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A3CB6D32AF92301253AD52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShopBackAssignmentTests/Pods-ShopBackAssignmentTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AFFCCCFC3CC7BEEEC56C7487 /* [CP] Copy Pods Resources */ = {
@@ -423,16 +487,13 @@
 /* Begin XCBuildConfiguration section */
 		B21012D421234FE4001FBD26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD3B7BED78D3508EDEA04BD /* Pods-ShopBackAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignmentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -443,16 +504,13 @@
 		};
 		B21012D521234FE4001FBD26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83229D67B70886F24D1477E /* Pods-ShopBackAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignmentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -584,10 +642,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignment/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ShopBackAssignment/ShopBackAssignment-Bridging-Header.h";
@@ -606,10 +661,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X28C7C3VS;
 				INFOPLIST_FILE = ShopBackAssignment/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.ShopBackAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ShopBackAssignment/ShopBackAssignment-Bridging-Header.h";
